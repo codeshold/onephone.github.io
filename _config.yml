@@ -1,0 +1,127 @@
+# Owner/Author information
+author:
+  name:             WenfengShi
+  avatar:           /assets/img/avatar.png
+  email:            wuzhimang@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+
+
+# 站点信息
+title:              SWF's Hacking Dream 
+description:        这个家伙梦想成为一名黑客
+url:                http://codeshold.me
+#url: http://127.0.0.1:4000 # debug
+production_url:     http://codeshold.me    # production_url是sitemap生成的url,方便百度谷歌收录.
+
+
+# url_tags必须和tags.md中的permalink定义相同，这样定义的原因是不希望permalink中包含文件类型后缀。
+# 或者tags.md中不定义permalink，这里直接引用tags.md的在目录中的绝对地址。
+# 其它几个url也需要遵循这个原则。
+# 
+url_rss:            /pages/atom.xml
+url_about:          /pages/about.html
+url_archives:       /pages/archive.html
+url_atom:           /pages/atom.html
+url_tags:           /pages/tags.html
+
+# gavatar头像及Favicon
+favicon:            /assets/img/favicon.ico
+gavatar:            /assets/img/avatar.png
+
+
+
+# google analytics 设置
+ga:
+  id: UA-73010107-1
+  url: wenfengshi.me
+
+# disqus 设置
+# Set Up Disqus On a Your Own Site, this shortname is your unique Disqus URL.
+# something like this: shortname.disqus.com
+disqus:
+  shortname: wenfengshime
+
+
+# 主题设置，自动激活某个分类
+active: Android
+
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Android
+  - 工具
+
+
+# 中文本地化
+locals:
+  tags: "# 标签"
+  about: "# 关于"
+  newest: "最新文章"
+  archive: "# 归档"
+
+  
+# Background image to be tiled on all pages
+background: 
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:year/:month/:title.html
+relative_permalinks: false
+
+
+# Amount of newest post to show on home page
+paginate: 8
+paginate_path: "/page:num"
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+future:      true
+          
+
+# markdown设置
+# redcarpet extensions 含义参考 https://github.com/vmg/redcarpet
+# 选择它的主要原因是，支持```language```语法，用来标记代码块，不需要缩进4个空格。
+# 另外还支持脚注、文本高亮、删除线等扩展的markdown语法，
+# 需要加入extensions列表才能开启或关闭相应功能。
+# 
+# 表格语法需要特别注意 :-: 中间若有空格，可能不会解析。
+# no_intra_emphasis: do not parse emphasis inside of words 不解析单词间的下划线
+# 
+# 其它可选的markdown: rdiscount, kramdown, 
+#
+# Github 不再支持 redcarpet， 替换为 kramdown
+# https://github.com/planetjekyll/quickrefs/blob/master/FAQ.md#q-how-can-i-get-backtick-fenced-code-blocks-eg--working-with-kramdown
+#
+# Should the markdown renderer treat a single line break as <br>?
+# http://meta.stackexchange.com/questions/26011/should-the-markdown-renderer-treat-a-single-line-break-as-br
+#
+# Markdown 需要敲两次回车才能产生一个新的段落。
+# 仅仅一个回车不会被解释为换行，如果想换行，需要在行尾「敲两个空格然后回车」，或者在行尾加标签 <br>，或者设置 hard_wrap 为 true
+#
+# http://kramdown.gettalong.org/rdoc/Kramdown/Options.html
+# hard_wrap=true  Interprets line breaks literally
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+
+# Fixing highlighting errors: pygments not supported.
+
+highlighter: rouge
+    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+
+include: []
+exclude: ["README.md"]
+
+
+# For jekyll-3.0
+gems: [jekyll-paginate]
