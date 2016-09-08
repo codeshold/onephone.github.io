@@ -38,17 +38,15 @@ ga:
 # disqus 设置
 # Set Up Disqus On a Your Own Site, this shortname is your unique Disqus URL.
 # something like this: shortname.disqus.com
-disqus:
-  shortname: wenfengshime
 
 
 # 主题设置，自动激活某个分类
-active: Android
+active: 读书
 
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Android
+  - 读书
   - 工具
 
 
