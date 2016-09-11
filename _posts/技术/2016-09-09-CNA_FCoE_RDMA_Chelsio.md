@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TOE,RDMA等相关概念及Chelsio产品介绍
-category: 高速网络
+category: 技术
 tags: [高速网络, RDMA]
 ---
 ## 核心基础概念
