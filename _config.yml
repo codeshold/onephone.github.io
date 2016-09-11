@@ -32,7 +32,7 @@ gavatar:            /assets/img/avatar.png
 
 # google analytics 设置
 ga:
-  id: UA-73010107-1
+  id: 
   url: wenfengshi.me
 
 # disqus 设置
