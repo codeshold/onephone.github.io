@@ -34,7 +34,8 @@ tags: [Git]
     查看特定日期差别：`https://github.com/rails/rails/compare/master@%7B2016-09-08%7D...master`
 
 11. 通过在Pull Request的URL后添加`.diff`或`.patch`，可直接获取对应格式的Pull Request文件
-若Pull Request的URL为`https://XXXX/仓库名/pull/28`,则获取diff格式文件，只需在其末尾添加`.diff`，如`https://XXXX/仓库名/pull/28.diff`，patch格式也相同，末尾添加`.patch`
+
+    > 若Pull Request的URL为`https://XXXX/仓库名/pull/28`,则获取diff格式文件，只需在其末尾添加`.diff`，如`https://XXXX/仓库名/pull/28.diff`，patch格式也相同，末尾添加`.patch`
 12. Close Issue时，可在提交中以一定的格式描述提交信息，而对应的Issue就会自动Close。不用在网页中手动操作。（**方便**）
 
     > 下列任意格式都可以——`fix #2`, `fixes #2`, `fixed #2`, `close #2`, `closes #2`, `closed #2`, `resolve #2`, `resolves #2`, `resolved #2`
