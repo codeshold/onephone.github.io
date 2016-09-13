@@ -69,7 +69,7 @@ tags: [Git]
 
 8. `git reset --hard XXXXX`回溯历史时，哈希值只要输入**4位以上**就行
 9. `git commit --amend` 修改提交信息（**万一提交信息里面有拼写错误呢**）
-10. `git rebase HEAD~2`将最近两次提交的记录合并为一次完美记录，`git rebase`可将不良记录（如拼写错误）从历史中抹去（**很实用，很实用**）
+10. `git rebase -i HEAD~2`将最近两次提交的记录合并为一次完美记录，`git rebase`可将不良记录（如拼写错误）从历史中抹去（**很实用，很实用**）
 11. `git branch -a` 同时显示本地仓库和远程仓库的分支信息
 14. `git log -p FILENAME`显示文件改动信息
 15. `git commit`之前先`git diff HEAD`查看本次提交和上次提交的区别（**好习惯**）
