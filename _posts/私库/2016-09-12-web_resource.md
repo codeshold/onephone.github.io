@@ -7,11 +7,9 @@ tags: [web]
 ---
 
 ## 大牛博客
-1. 推酷
-- 网址：[http://www.tuicool.com](http://www.tuicool.com)
+1. [酷壳](http://coolshell.cn/)
 
 ## 社区网站
-1. 图灵社区
-- 网址：[http://www.ituring.com.cn](http://www.ituring.com.cn/users/213442)
+1. [图灵社区](http://www.ituring.com.cn/users/213442)
 
-2. 
+2. [推酷](http://www.tuicool.com)
