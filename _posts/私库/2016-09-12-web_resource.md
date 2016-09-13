@@ -13,3 +13,7 @@ tags: [web]
 1. [图灵社区](http://www.ituring.com.cn/users/213442)
 
 2. [推酷](http://www.tuicool.com)
+
+## 个人收藏的博客
+1. [yansu](http://yansu.org/)
+
