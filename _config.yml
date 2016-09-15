@@ -2,8 +2,15 @@
 author:
   name:             WenfengShi
   avatar:           /assets/img/avatar.png
+  rss:              /pages/atom.xml
   email:            wuzhimang@gmail.com
   # Social networking links used in footer. Update and remove as you like.
+  github:           https://github.com/wenfengshi
+  linkedin:         https://cn.linkedin.com/in/wenfeng-shi-643474129
+  douban:           https://www.douban.com/people/138288726/
+  twitter:          https://twitter.com/wuzhimang 
+  wechat:           /assets/img/wechat.png
+  qq:               /assets/img/qq.png
 
 
 # 站点信息
