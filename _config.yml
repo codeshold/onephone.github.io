@@ -2,7 +2,6 @@
 author:
   name:             WenfengShi
   avatar:           /assets/img/avatar.png
-  rss:              /pages/atom.xml
   email:            wuzhimang@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   github:           https://github.com/wenfengshi
