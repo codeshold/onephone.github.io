@@ -1,6 +1,6 @@
 # Owner/Author information
 author:
-  name:             WenfengShi
+  name:             wuzhimang
   avatar:           /assets/img/avatar.png
   email:            wuzhimang@gmail.com
   # Social networking links used in footer. Update and remove as you like.
@@ -39,7 +39,7 @@ gavatar:            /assets/img/avatar.png
 # google analytics 设置
 ga:
   id: 
-  url: wenfengshi.me
+  url: codeshold.me
 
 # disqus 设置
 # Set Up Disqus On a Your Own Site, this shortname is your unique Disqus URL.
