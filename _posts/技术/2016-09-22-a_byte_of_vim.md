@@ -285,9 +285,7 @@ Modeline -> `vim: noexpandtab`
 
 Portable Vim -> GVimPortable.exe
 
-Upgrade plugins -> `:GLVS`(which stands for 'G'et 'L'atest 'V'im 'S'cripts)
-
-                -> `:help getscript`
+Upgrade plugins -> `:GLVS`(which stands for 'G'et 'L'atest 'V'im 'S'cripts) -> `:help getscript` 
 
 Dr.Chip's plugins -> drawit.vim
 
