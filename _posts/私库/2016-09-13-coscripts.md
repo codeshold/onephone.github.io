@@ -1,5 +1,5 @@
 ---
-title: 我需要的 常用scripts
+title: 自己的 常用scripts
 layout: post
 author: WenfengShi
 category: 私库

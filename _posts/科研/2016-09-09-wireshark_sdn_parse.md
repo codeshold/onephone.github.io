@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 让wireshark支持OF协议解析
-category: 技术
+category: 科研
 tags: [SDN]
 ---
 

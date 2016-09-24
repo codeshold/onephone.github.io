@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SDN Cbench 安装
-category: 技术
+category: 科研
 tags: [SDN]
 ---
 

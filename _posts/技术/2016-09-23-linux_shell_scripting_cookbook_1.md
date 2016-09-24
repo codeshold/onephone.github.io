@@ -121,7 +121,7 @@ echo Password is $password
 - 调试脚本
     1. `bash -x script.sh` 或 `sh -x script.sh`
     2. `set -x`和`set +x`(执行命令后会显示该指令及其参数);`set -v`当命令进行读取时显示输入，`set +v`进制打印输入 [详细介绍](http://man.linuxde.net/set)
-    3. 将shebang从`#!/bin/bash` 改成 `#!/bin/bash -xv` 也可
+    3. 将shebang从`#!/bin/bash` 改成 `#!/bin/bash -xv` 也可(`./script.sh`运行)
     4. 自定义格式显示调试信息，新建如下脚本，然后命令行键入 `[root@share codes]# _DEBUG=on sh debug.sh` (`:`告诉shell不进行任何操作)
 
 ```

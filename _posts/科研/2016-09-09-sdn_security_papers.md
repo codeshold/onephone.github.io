@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SDN security papers 
-category: 技术
+category: 科研
 tags: [SDN]
 ---
 
