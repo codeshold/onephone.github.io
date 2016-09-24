@@ -3,7 +3,7 @@ title: 屡试不爽的“3个”iPad使用技巧
 layout: post
 author: WenfengShi
 category: 技术
-tags: [终端]
+tags: [工具]
 ---
 
 > 最近在一个国外的geek网站上看到了一些使用ipad的技巧，很实用且屡试不爽，想分享下（其实自己只是第一个不知道）
