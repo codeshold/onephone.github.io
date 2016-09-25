@@ -8,6 +8,8 @@ tags: [shell]
 
 > 《linux shell 脚本编程攻略 （第2版）》 第二章 “命令之乐” 笔记
 
+>  **主要命令**: `cat`, `script`, `scriptreplay`, `find -exec`, `xargs`, `tr`, `md5sum`, `sha1sum`, `md5dep`, `crypt`, `gpg`, `base64`, `opensslpasswd`, `sort`, `uniq`, `mktemp`, `split`, `csplit`, `${URL%*.}`, `${URL##*.}`, `rename`, `look`, `echo -e`, `grep -q`, `PIDARRAY+=("$!")`, `expect`
+
 - `-`被作为stdin文本的文件名，如`echo "hello" | cat - file.txt`
 
 - `cat -s file.txt` 可压缩相邻的空白行; `cat -T file.py` 能将制表符标记成`^|`(**对python等文件很有用**); `cat -n` 显示行号（其也会为空白行添加行号，加`-b`可跳过空白符）
@@ -19,15 +21,15 @@ tags: [shell]
 - **find**
     1. `find . -name "*.txt"`， `find . -iname "example*"`忽略大小写
     2. `find . \( -name "*.txt" -o -name "*.sh" \)` 打印出所有的.txt和.sh文件
-    3. `find /home/swf -path "*/hello/*"` 使用`-path`来匹配文件路径；`find . -iregex ".*\(\.py\|\.sh\)$"` 通过正则表达式来匹配.py和.sh文件，且忽略find . -iregex ".*\(\.py\|\.sh\)$大消息写
+    3. `find /home/swf -path "*/hello/*"` 使用`-path`来匹配文件路径；`find . -iregex ".*\(\.py\|\.sh\)$"` 通过正则表达式来匹配.py和.sh文件，且忽略`find . -iregex ".*\(\.py\|\.sh\)$"`忽略大小写
     4. `find . ! -name "*.txt"` 否定查询
     5. `find . -maxdepth 3 -mindepth 1 -name "f*"` 基于目录深度的搜索
     6. `find . -type d` 查找目录(f/l/c/b/s/p)，s表示套接字设备，p表示FIFO
     7. `-atime -mtime -ctime` 访问时间、文件内容修改时间、文件元数据修改时间(权限、所有权)；`-atime -7`表示最近7天内，`-atime 7`恰好在七天前， `-atime +7` 超过七天, 如`find . -type f -atime +7`; 类似的有`-amin -mmin -cmin`（基于分钟的参数） 
     8. `-size +2k`, `-size 2k`, `-size -2k`按文件大小（大于，等于，小于）
     9. 删除当前目录下的.swp文件，`find . -type f -perm 644 -name "*.swp" -delete`
-    10. `find . -name "*.c" -exec cat {} \; > all_c_files.txt` find同命令结合
-    11. `find . \( -name ".git" -prune \) -o \( -type f -print \)` 不包含在.git目录中的所有文件名
+    10. `find . -name "*.c" -exec cat {} \; > all_c_files.txt` find同命令结合 
+    11. `find . \( -name ".git" -prune \) -o \( -type f -print \)` 不包含在.git目录中的所有文件名（若前者为真则后者不执行）
 
 - **xargs**能把从stdin接收到的数据重新格式化，再将其作为参数提供给其他命令
     1. `cat example.txt | xargs -d X -n 3` 以X为定界符, 每行2个参数
