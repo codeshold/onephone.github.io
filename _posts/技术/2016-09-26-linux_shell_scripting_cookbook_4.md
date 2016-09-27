@@ -58,4 +58,23 @@ awk '{ print 1,2,3; }'
 
 - 打印文件中的第五列 `awk '{ print $5 }' filename`， 打印当前目录下各个文件的权限`ls -l | awk '{ print $1 " : " $8 } filename`
 
+- 对目录中所有的文本进行替换
+    1. `find . -name *.cpp -print0 | xargs -I{} -0 | sed -i 's/Copyright/Copyleft/g' {}`
+    2. `find . -name *.cpp -exec sed -i 's/Copyright/Copyleft/g' \{\} \;` 为每一个超找到的文件调用一次sed
+    3. `find . -name *.cpp -exec sed -i 's/Copyright/Copyleft/g' \{\} \+` 将多个文件名一并传给sed
 
+- 切片
+```
+[root@share ~]# var=shiwenfeng
+[root@share ~]# echo ${var/shi/yes/}
+yes/wenfeng
+[root@share ~]# echo ${var:4}
+enfeng
+[root@share ~]# echo ${var:4:2}
+en
+[root@share ~]# echo ${var:(-1)}
+g
+[root@share ~]# echo ${var:(-2):2}
+ng
+[root@share ~]# 
+```
