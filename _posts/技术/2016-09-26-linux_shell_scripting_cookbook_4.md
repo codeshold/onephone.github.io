@@ -2,7 +2,7 @@
 title: linux shell 总结（4）
 layout: post
 author: WenfengShi
-category: GitHub
+category: 技术
 tags: [shell]
 ---
 
