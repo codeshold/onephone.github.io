@@ -6,7 +6,7 @@ category: 技术
 tags: [shell]
 ---
 
-> 《linux shell 脚本编程攻略 （第2版）》 第五章 “一团乱麻？没这回事” 笔记
+> 《linux shell 脚本编程攻略 （第2版）》 第五章 笔记
 
 - **wget**
     1. `wget -t 5 www.codeshold.me`, `wget -t 0 www.codeshold.me` 无限次尝试, `-O outfile.html`, `-o out.log`
