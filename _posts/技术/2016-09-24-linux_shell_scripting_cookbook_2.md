@@ -1,5 +1,5 @@
 ---
-title: linux shell 总结（2） 
+title: linux shell 简单总结（2） 
 layout: post
 author: WenfengShi
 category: 技术
@@ -8,7 +8,7 @@ tags: [shell]
 
 > 《linux shell 脚本编程攻略 （第2版）》 第二章 “命令之乐” 笔记
 
->  **主要命令**: `cat`, `script`, `scriptreplay`, `find -exec`, `xargs`, `tr`, `md5sum`, `sha1sum`, `md5dep`, `crypt`, `gpg`, `base64`, `opensslpasswd`, `sort`, `uniq`, `mktemp`, `split`, `csplit`, `${URL%*.}`, `${URL##*.}`, `rename`, `look`, `echo -e`, `grep -q`, `PIDARRAY+=("$!")`, `expect`
+>  **主要命令**: `cat`, `script`, `scriptreplay`, `find -exec`, `xargs`, `tr`, `md5sum`, `sha1sum`, `md5dep`, `crypt`, `gpg`, `base64`, `opensslpasswd`, `sort`, `uniq`, `mktemp`, `split`, `csplit`, `${URL%*.}`, `${URL##*.}`, `rename`, `look`, `echo -e`, `grep -q`, `PIDARRAY+=("$!")`, `expect`等
 
 - `-`被作为stdin文本的文件名，如`echo "hello" | cat - file.txt`
 

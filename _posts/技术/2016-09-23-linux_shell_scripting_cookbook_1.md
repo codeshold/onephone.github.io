@@ -1,12 +1,14 @@
 ---
-title: linux shell 总结（1） 
+title: linux shell 简单总结（1） 
 layout: post
 author: WenfengShi
 category: 技术
 tags: [shell]
 ---
+  
+> 《linux shell 脚本编程攻略 （第2版）》 第一章 “小试牛刀” 笔记  
 
-> 《linux shell 脚本编程攻略 （第2版）》 第一章 “小试牛刀” 笔记
+> 主要命令：`let`, `cat`, `变量字符串处理`, `数学计算`, `管道|`, `重定向`, `$`, `expr`, `bc`, `echo`, `$#`, `$*`, `$0`, `eval`, `tr`, `printf`, `read`, `tput`, `循环语句`, `条件语句`, `分隔符IFS`等
 
 - 文本行`#!/bin/bash`中的`#!`读作 *shebang* （也可读做 *hashbang*，*pound-bang*）[参考维基](https://en.wikipedia.org/wiki/Shebang_(Unix))
 
@@ -19,7 +21,7 @@ tags: [shell]
 - 查询某程序运行时环境变量`cat /proc/进程ID/environca` (`pgrep gedit`查看程序gedit的PID，或使用`ps aux | grep gedit`查看)
 
 - `tr`将输出重新格式化 `cat /proc/84354/environ | tr '\0' '\n'`
-
+ 
 - 获取字符串长度`var=wenfeng; echo ${#var}`(助记:`#`是number sign)，获取当前使用的SHELL `echo $0`或`echo $SHELL`
 
 - `${parameter:+expression}` 如果parameter有值且不为空，则使用expression的值。`prepend() { [ -d "$2" ] && eval $1=\"$2\$\{$1:+':'\$$1\}\" && export $1; } (`eval`可将多个参数整合成一个参数)
@@ -116,7 +118,7 @@ echo
 echo Password is $password
 ```
 
-- `data +%s` 打印timestamp （从1970年1月1日0点开始的秒数）即POSIX时间; `date "+%d %B %Y"` 按格式输出
+- `date +%s` 打印timestamp （从1970年1月1日0点开始的秒数）即POSIX时间; `date "+%d %B %Y"` 按格式输出
 
 - 调试脚本
     1. `bash -x script.sh` 或 `sh -x script.sh`
