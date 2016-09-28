@@ -34,7 +34,7 @@ tags: [shell]
 - **xargs**能把从stdin接收到的数据重新格式化，再将其作为参数提供给其他命令
     1. `cat example.txt | xargs -d X -n 3` 以X为定界符, 每行2个参数
     2. `cat args.txt | xargs -n 1 ./cecho.sh`, `cat args.txt | xargs -I {} ./cecho.sh -p {} -l`，其中{}会进行扩充
-    3. 删除特定系列文件`find . -type f -name "*.txt" -print0 | xargs -0 rm -rf"
+    3. 删除特定系列文件`find . -type f -name "*.txt" -print0 | xargs -0 rm -rf"`
     4. 统计每个文件的行数和总行数 `find . -type -f -name "*.md" -print0 | xargs -0 wc -l`
 
 - `cat files.txt | ( while read arg; do cat $arg; done; )`相当于`cat files.txt | xargs -I {} cat {}`
