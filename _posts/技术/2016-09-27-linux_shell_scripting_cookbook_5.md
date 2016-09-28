@@ -29,6 +29,7 @@ tags: [shell]
     8. 认证 `curl -u user:pass http://codeshold.me`, `curl -u user http://10.108.255.249/`
     9. 添加头部 `-I` 或 `--head`
     10. 命令行访问Gmail (不能用的）
+
 ```
 $ cat gmail_bash.sh
 #!/bin/bash
@@ -45,6 +46,9 @@ sed -n 's/.*<title>\(.*\)<\/title.*<author><name>\([^<]*\)<\/name><email>\([^<]*
 head -n $(( $SHOW_COUNT * 3))
 ```
 
-- **图片抓取器**
+- [图片抓取器](https://github.com/wenfengshi/CoScripts/blob/master/shell/img_downloader.sh)
 
+- [网页相册](https://github.com/wenfengshi/CoScripts/blob/master/shell/generate_album.sh)
+
+- POST请求 `curl URL -d "XXX"`, `wget URL --post-data "XXX" -O output.html` [脚本](https://github.com/wenfengshi/CoScripts/blob/master/shell/FDU_login.sh)
 
