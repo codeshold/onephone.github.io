@@ -1,5 +1,5 @@
 ---
-title: linux shell 简单总结（2） 
+title: linux shell 学习摘记（2） 
 layout: post
 author: WenfengShi
 category: 技术

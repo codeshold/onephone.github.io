@@ -1,12 +1,14 @@
 ---
-title: linux shell 总结（7） 
+title: linux shell 学习摘记（7） 
 layout: post
 author: WenfengShi
 category: 技术
 tags: [shell]
 ---
 
-> 《linux shell 脚本编程攻略 （第2版）》 第七章 笔记
+> 《linux shell 脚本编程攻略 （第2版）》 第七章 “无网不利”笔记
+
+> 常用命令：`ifocnfig`, `host`, `nslookup`, `route`, `ping`, `fping`, `nc`, `lsof`, `netstat`, `iwconfig`, `ssh`, `sshfs`, `firewall`, `&子进程`
 
 - 打印网络接口列表`ifconfig | cut -c-10 | tr -d ' ' | tr -s '\n'`
 

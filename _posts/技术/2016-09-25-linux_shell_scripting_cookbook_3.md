@@ -1,5 +1,5 @@
 ---
-title: linux shell 总结（3） 
+title: linux shell 学习摘记（3） 
 layout: post
 author: WenfengShi
 category: 技术
@@ -7,6 +7,7 @@ tags: [shell]
 ---
 
 > 《linux shell 脚本编程攻略 （第2版）》 第三章 “以文件之名” 笔记      
+
 > 常用命令：`comm`, `chmod/chown`, `chattr`, `touch`, `列出目录的相关命令`, `readlink`, `file`, `<<<`, `dd`, `有关光盘的各类命令`,`mkfs.ext4`, `mkisofs`, `isohybrid`, `mount/umount`, `fdisk`, `loseup`, `sync`, `cdrecord`, `eject`, `diff`, `patch`, `seq`, `tail`, `dmesg`, `pidof`, `pushd/popd`, `wc`, `tree`    
   
 - `comm A.txt B.txt -2 -3` 删除第二列和第三列，保留只在A.txt中出现的行  
