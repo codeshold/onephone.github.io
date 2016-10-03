@@ -17,7 +17,7 @@ tags: [shell]
     4. `ps -C bash -o pid=`直接打印出命令所对应的pid  
     5. `ps -u root -U root -o user,pcpu` 根据用户id等信息过滤ps输出  
     6. `ps -t pts/0,pts/1`通过tty过滤ps输出  
-    7. 显示线程相关的信息`-L`， 如｀ps -eLf --sort -nlwp | head｀, 其中NLWP表示线程的数量，WLP是ps输出中每个条目的线程ID  
+    7. 显示线程相关的信息`-L`， 如`ps -eLf --sort -nlwp | head`, 其中NLWP表示线程的数量，WLP是ps输出中每个条目的线程ID  
     8. `ps -ef`, `ps -e u`, `ps -e w`松宽输出  
     9. 显示进程的环境变量`ps -eo pid,cmd e | tail -n 3`  
   
