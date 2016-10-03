@@ -37,7 +37,8 @@ tags: [shell]
     3. `killall PROCESSNAME`通过进程命令名终止进程 , `killall -u UERNAME PROCESSNAME`, `killall -9 PROCESSNAME`  
     4. `pkill PROCESSNAME`, `pkill -s SINGAL PROCESSNAME`  
     5. `trap 'singal_handler_function_name' SINGALLIST`  
-```  
+
+```
 #!/bin/bash  
 function handler()  
 {  
@@ -52,13 +53,14 @@ while true;
 do  
   sleep 1;  
 done  
-```  
+```
   
 - 向所有当前的登陆用户发送广播消息`echo hello | wall`  
   
 - `mesg y`允许写入消息， `mesg n`不允许写入消息  
   
 - 向特定用户发送消息  
+
 ```  
 #!/bin/bash  
 USERNAME=$1  
