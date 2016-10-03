@@ -75,7 +75,7 @@ done
     1. `hostname`, `uname`, `cat /proc/cpuinfo | sed -n 5p`, `cat /proc/meminfo | head -;`, `cat /proc/partition`或者`fdiks -l`, `lshw`(不一定有)  
     2. **proc** is a pseudo filesystem. 对应的目录下有各个进程的PID, 进一步的有**environ**(进程相关的环境变量), **cwd**(一个到进程工作目录的符号链接), **exe**(进程所对应的可执行文件的链接) `readlink exe`, **fd**包含进程所使用的文件描述符  
   
-- **corn**  
+- **cron**  
     1. `crontab -e`, `crontab -l`, `crontab -u` 每个用户对应有自己的crontab  
   
 - [bash读写mysql数据库脚本]()  
