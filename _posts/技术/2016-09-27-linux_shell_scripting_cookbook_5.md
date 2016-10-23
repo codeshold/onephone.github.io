@@ -1,12 +1,14 @@
 ---
-title: linux shell 总结（5） 
+title: linux shell 学习摘记（5） 
 layout: post
 author: WenfengShi
 category: 技术
 tags: [shell]
 ---
 
-> 《linux shell 脚本编程攻略 （第2版）》 第五章 笔记
+> 《linux shell 脚本编程攻略 （第2版）》 第五章 ”一团乱麻？没有这回事“ 笔记
+
+> 主要命令：`wget`, `lynx`, `curl`, `图片抓取脚本`, `网页相册生成脚本`
 
 - **wget**
     1. `wget -t 5 www.codeshold.me`, `wget -t 0 www.codeshold.me` 无限次尝试, `-O outfile.html`, `-o out.log`
