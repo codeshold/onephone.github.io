@@ -15,6 +15,7 @@ tags: [script]
 
 
 ## 1. 修复方法
+
 ### 1.1 手动修复("耍帅"技巧，我一直这么干的)
 1. 打开CMD.exe
 2. 进入U盘目录下，如`F:`
@@ -33,7 +34,7 @@ title 中毒U盘恢复程序（快捷方式病毒）
 
 :start
 echo.
-echo 请输入U盘对应的磁盘符号，如F
+echo 请输入U盘对应的磁盘符号(如F)
 set /p drive=
 if exist %drive%:\ (
     if "%drive%"=="C" goto warning
@@ -58,8 +59,8 @@ echo 正在删除vbs病毒文件...
 del /a /q /s %drive%:\*.vbs
 
 echo.
-echo U盘修复成功!
-echo 有问题欢迎邮件wuzhimang@gmail.com
+echo U盘修复成功! (有问题欢迎邮件wuzhimang@gmail.com)
+echo.
 echo 按任意键退出
 set /p "end="
 goto end
@@ -67,7 +68,9 @@ goto end
 :warning
 echo.
 echo U盘标签未发现
+echo.
 echo 请插入U盘或输入正确的标签
+echo.
 
 pause
 
