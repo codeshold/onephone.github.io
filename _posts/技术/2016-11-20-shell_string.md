@@ -20,8 +20,7 @@ tags: [shell]
 8. `${string:?word}`: 如果string没设定或为空值，则将word输出到STDERR(非空值不做处理)
 
 ## 获取字符串长度
-1. `${#string}`
-> `＃`号也称为为number sign
+`${#string}`(`＃`号也称为为number sign)
 
 ## 字符串删除
 设定`string='http://www.codeshold.me/2016/11/mac_skills.html'`
