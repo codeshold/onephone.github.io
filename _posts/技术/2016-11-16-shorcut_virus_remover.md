@@ -1,5 +1,5 @@
 ---
-title: U盘中毒恢复--快捷键病毒
+title: 中毒U盘恢复--快捷键病毒
 layout: post
 author: WenfengShi
 category: 技术

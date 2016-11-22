@@ -1,5 +1,5 @@
 ---
-title: NTP服务器/客户端配置(知其所以然)
+title: 配置ntp(知其所以然)
 layout: post
 author: WenfengShi
 category: 技术
@@ -29,7 +29,7 @@ tags: [linux]
 ### 2. 修改ntp.conf中的restrict值
 
 配置文件`/etc/ntp.conf`
-```
+```bash
 # Permit time synchronization with our time source, but do not
 # permit the source to query or modify the service on this system.
 restrict default nomodify notrap nopeer noquery
@@ -47,7 +47,7 @@ restrict default nomodify notrap nopeer noquery
 - ntp.conf中添加`restrict 10.10.88.0 mask 255.255.255.0 nomodify notrap`
 - 如果本地主机需要查询和修改权限，再添加`restrict 127.0.0.1` --> **建议添加**，若有保持默认即可!
 - 由于服务器不能联网，建议注释掉部分内容并添加`server 10.10.88.123 iburst`,如下
-```
+```bash
 #server 0.centos.pool.ntp.org iburst
 #server 1.centos.pool.ntp.org iburst
 #server 2.centos.pool.ntp.org iburst
@@ -60,7 +60,7 @@ server 10.10.88.123 iburst
 > 当ntp服务器(10.10.88.171)不能连接到上级ntp服务器(10.10.88.123)时, 171以本机系统时间提供时间同步服务。
 
 在ntp.conf中添加如下内容，注意是**127.127.1.0**!!!
-```
+```bash
 server 127.127.1.0 # 本机时间
 fudge 127.127.1.0 stratum 10
 ```
@@ -81,7 +81,7 @@ fudge 127.127.1.0 stratum 10
 1. 安装ntpd, `yum install ntpd`
 2. 编辑`/etc/ntp.conf`配置文件
 - 注释掉以下内容（因为服务器不能连外网）
-```
+```bash
 #server 0.centos.pool.ntp.org iburst
 #server 1.centos.pool.ntp.org iburst
 #server 2.centos.pool.ntp.org iburst
