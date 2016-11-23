@@ -25,5 +25,15 @@ Storage Virtualization refers to the grouping together of multiple physical netw
 5. Straw Man 
 A Straw Man is a temporary rough draft/proposal, crude plan, or prototype solution put together with incomplete information that helps a team discover disadvantages, problems, etc. and build it into something better during the development process.
 
+6. XHR: xml http request
+
+7. AJAX: asynchronous javascript and xml
+
+8. Swirl
+Swirl is the term for the static and background noise that is sometimes heard
+on mobile phones.
+
+
+
 
 
