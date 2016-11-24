@@ -33,7 +33,14 @@ A Straw Man is a temporary rough draft/proposal, crude plan, or prototype soluti
 Swirl is the term for the static and background noise that is sometimes heard
 on mobile phones.
 
-
+9. Syntheti Backups 
+A Synthetic Backup combines a full backup of data/information and any
+modifications/changes made with one or more subsequent incremental backups. The
+incremental backups themselves only consist of changed data/information since
+the last full backup.
+Synthetic Backups are referred to as such because they are not created from
+original data/information, but from two or more files that have been “merged” by
+the backup application being used.
 
 
 
