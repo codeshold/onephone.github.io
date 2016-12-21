@@ -3,7 +3,7 @@ title: 实用的四个shell编程题
 layout: post
 author: WenfengShi
 category: 私库
-tags: [shell]
+tags: [shell, leetcode]
 ---
 
 > 4个用来测试自己shell编程能力的题(面试题)，同时也是比较实用的四个小脚本。源自[leetcode](https://leetcode.com/problemset/shell/)
