@@ -3,7 +3,7 @@ title: IBM bluemix
 layout: post
 author: WenfengShi
 category: 技术
-tags: [分享会]
+tags: [note]
 ---
 
 > 参加IBM Bluemix 结束分享会的时做的简单笔记

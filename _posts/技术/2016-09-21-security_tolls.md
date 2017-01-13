@@ -3,7 +3,7 @@ title: 安全测试工具篇（开源&商业）
 layout: post
 author: WenfengShi
 category: 技术
-tags: [安全]
+tags: [security, tools]
 ---
 
 > 因项目的需要，自己对一些主流的安全测试工具做了详细的调研工作（包括开源和商业的）。本文是自己的**简要分享**，希望能帮助有需要的人，其中部分工具是本人使用过的。  

@@ -2,8 +2,8 @@
 title: DDos/DoS工具集(持续更新)
 layout: post
 author: WenfengShi
-category: 技术
-tags: [network, dos, tools]
+category: 科研
+tags: [network, security, tools]
 ---
 > 项目中需要帮助某公司完成对几台抗DDoS设备的测试，受限于因素，只能通过搭建软件环境来完成测评。下面是针对自己前期工作的一小部分整理，仅罗列了基于开源工具的一些内容，其他定制化的和自己编写的程序则不宜公开。hping、LOIC等其他工具，由于性能、平台或者不能模拟分布式等原因在调研时已被排除在外！
 

@@ -3,7 +3,7 @@ title: 项目总结(201610-201612)
 layout: post
 author: WenfengShi
 category: 科研
-tags: [项目]
+tags: [note]
 ---
 
 > 今天腾出了半天时间，将2016年下半年的相关项目整理了下，算是完整的告一段落了！该放假过年了！

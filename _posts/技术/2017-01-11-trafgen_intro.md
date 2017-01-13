@@ -3,7 +3,7 @@ title: 高性能流量生成工具trafgen(DDoS模拟)
 layout: post
 author: WenfengShi
 category: 技术
-tags: [network, dos, tools]
+tags: [network, security, tools]
 ---
 > 因项目需要，自己需要对主流的几家抗DDoS设备做测评， 当然了最专业的是使用Spirent TestCenter，但限于其他因素，最终决定搭建一个软件环境来进行相关的DDoS测试。本文主要讲解的如何trafgen工具来发起DDoS工具(syn flood, ack flood等等)
 

@@ -3,7 +3,7 @@ title: 安全及性能测试工具（网站收集）
 layout: post
 author: WenfengShi
 category: 技术
-tags: [安全, 性能]
+tags: [security, tools]
 ---
 
 > 下面是自己收集的一些有关安全和性能测试的网站，主要是工具的介绍。  
