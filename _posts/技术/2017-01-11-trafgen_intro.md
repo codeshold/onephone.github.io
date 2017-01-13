@@ -5,10 +5,11 @@ author: WenfengShi
 category: 技术
 tags: [network, security, tools]
 ---
-> 因项目需要，自己需要对主流的几家抗DDoS设备做测评， 当然了最专业的是使用Spirent TestCenter，但限于其他因素，最终决定搭建一个软件环境来进行相关的DDoS测试。本文主要讲解的如何trafgen工具来发起DDoS工具(syn flood, ack flood等等)
+> 因项目需要，自己需要对主流的几家抗DDoS设备做测评，当然了最专业的是使用Spirent TestCenter，但受限于其他因素，最终决定搭建一个软件环境来进行相关的DDoS测试。
 
-> synflood攻击、ackflood攻击、UDP fragment攻击的详细配置文件见 [github ddos-dos-tools][1]
-
+> 本文主要讲解的是如何使用trafgen工具发起DDoS攻击(syn flood, ack flood等等)  
+  
+> synflood攻击、ackflood攻击、UDP fragment攻击的详细配置文件见 [github ddos-dos-tools][1]  
 
 ## 工具选择
 1. 开源的流量生成工具很多，可用于模拟DoS攻击的工具也不在少数，如hping、scapy（python库）等等，但均存在着不足，如性能不够，不能模拟DDoS攻击（攻击流IP和PORT不能动态变化）

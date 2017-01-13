@@ -5,7 +5,9 @@ author: WenfengShi
 category: 科研
 tags: [network, security, tools]
 ---
-> 项目中需要帮助某公司完成对几台抗DDoS设备的测试，受限于因素，只能通过搭建软件环境来完成测评。下面是针对自己前期工作的一小部分整理，仅罗列了基于开源工具的一些内容，其他定制化的和自己编写的程序则不宜公开。hping、LOIC等其他工具，由于性能和其它原因未使用！
+> 项目中，需要帮助某公司完成对几台抗DDoS设备的测试，受限于各类因素，只能通过搭建软件环境来完成测评。下面是针对自己前期工作的一小部分整理，仅罗列了基于开源工具的一些内容，其他定制化的和自己编写的程序则未公开。hping、LOIC等其他工具，由于性能和其它原因也未被使用！  
+
+> [github ddos-dos-tools ](https://github.com/wenfengshi/ddos-dos-tools)
 
 ## 1. SynFlood 攻击
 > 借助`netsniff-ng`套件中的`trafgen`工具，其可伪造源ip发起DDoS攻击
