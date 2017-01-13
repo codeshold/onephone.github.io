@@ -5,7 +5,7 @@ author: WenfengShi
 category: 技术
 tags: [network, security, tools]
 ---
-> 因项目需要，自己需要对主流的几家抗DDoS设备做测评，当然了最专业的是使用Spirent TestCenter，但受限于其他因素，最终决定搭建一个软件环境来进行相关的DDoS测试。
+> 因项目需要，要对主流的几家抗DDoS设备做测评，当然了最专业的是使用Spirent TestCenter，但受限于其他因素，最终决定搭建一个软件环境来进行相关的DDoS测试。
 
 > 本文主要讲解的是如何使用trafgen工具发起DDoS攻击(syn flood, ack flood等等)  
   
@@ -126,7 +126,7 @@ trafgen属于netsniff-ng套件，是一款linux下的工具，安装很方便，
 
 
 ## 其他
-1. 在trafgen性能仍打不到要求的情况下，可通过netsniff-ng攻击进行流量回放，如下
+1. 在trafgen性能仍达不到要求的情况下，可通过netsniff-ng攻击进行流量回放，如下
 - 先捕获synfloog攻击数据包
 `netsniff-ng --in ens33 --out synflood.pcap --silent --verbose --filter 'ether src 00:50:56:ab:a5:3f'`
 `trafgen --cpp --dev ens33 --conf synflood.trafgen --verbose`
