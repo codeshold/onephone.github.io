@@ -17,8 +17,10 @@ tags: [network, security, tools]
 3. trafgen 工具能够动态生成攻击IP和端口号，能够通过配置文件动态修改攻击包的内容
 
 ## 简单使用
+
 ### 1. 安装
 trafgen属于netsniff-ng套件，是一款linux下的工具，安装很方便，通过系统的在线安装工具即可完成安装，如centos下`yum install netsniff-ng`即可
+
 ### 2. 使用（SYN Flood攻击）
 1. 工具的比较简单，主要是配置文件的编写，假设已经写好了一个synflood配置文件
 - 键入命令`trafgen --cpp --dev ens33 --conf synflood.trafgen --verbose`即可发起攻击

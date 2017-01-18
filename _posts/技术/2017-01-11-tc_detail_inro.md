@@ -23,6 +23,7 @@ tags: [network, tools]
 - Linux流量控制主要是在**输出接口**排列时进行处理和实现的。
 
 ## TC规则
+
 ### 1. 流量控制
 > 流量控制包括以下4种方式
 
@@ -114,6 +115,7 @@ tc [-s | -d ] class show dev DEV tc filter show dev DEV
 
 ## 具体操作
 Linux流量控制主要分为建立队列、建立分类和建立过滤器三个方面。
+
 ### 1. 基本步骤
 1. 针对网络物理设备（如以太网卡eth0）绑定一个队列QDisc；
 2. 在该队列上建立分类class；

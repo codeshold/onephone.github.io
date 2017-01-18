@@ -14,6 +14,7 @@ tags: [network, tools]
 > 以网卡p5p2为例
 
 - 查看NIC ring buffer大小， `ethtool -g p5p2`
+
 ```
 [root@globus03 20160924]# ethtool -g p5p2
 Ring parameters for p5p2:
@@ -28,8 +29,10 @@ RX Mini:	0
 RX Jumbo:	0
 TX:		4078
 ```
+
 - 设置NIC ring buffer大小，`ethtool -G p5p2 rx 4078`
 详细命令，`ethtool -G|--set-ring devname [rx N] [rx-mini N] [rx-jumbo N] [tx N]`
+
 ```
 [root@globus03 20160924]# ethtool -G p5p2 rx 4078
 [root@globus03 20160924]# ethtool -g p5p2
@@ -45,7 +48,9 @@ RX Mini:	0
 RX Jumbo:	0
 TX:		4078
 ```
+
 - 查看网卡驱动信息 `ethtool -i p5p2`
+
 ```
 [root@globus03 20160924]# ethtool -i p5p2
 driver: bnx2x
@@ -58,7 +63,9 @@ supports-eeprom-access: yes
 supports-register-dump: yes
 supports-priv-flags: yes
 ```
+
 - 查看当前网卡主要信息,` ethtool p5p2`
+
 ```
 [root@globus03 20160924]# ethtool p5p2
 Settings for p5p2:
@@ -91,8 +98,10 @@ Settings for p5p2:
 			       
 	Link detected: yes
 ```
+
 - 网卡测试命令, `ethtool -t p5p2 online`
 详细命令为`ethtool -t|--test devname [offline|online|external_lb]`，其中online表示不需要重启网卡的测试，offline表示要重启网卡
+
 ```
 [root@globus03 ~]# ethtool -t p5p2 online
 The test result is PASS
@@ -108,6 +117,7 @@ link_test (online)         	 0
 
 ## 统计信息
 - 查询网卡接收数据包信息,`ethtool -S em2 | grep -i error`
+
 ```
 [root@globus03 ~]# ethtool -S em2 | grep -i error
      rx_fcs_errors: 0
@@ -119,7 +129,9 @@ link_test (online)         	 0
      tx_carrier_sense_errors: 0
      tx_errors: 0
 ```
+
 - 查询网卡接收的数据包信息,`ethtool -S em2 | grep -i error`
+
 ```
 [root@globus03 ~]# ethtool -S em2 | grep -i rx
      rx_octets: 0
@@ -152,6 +164,7 @@ T**CP Segmentation Offload** 和 **UDP fragmentation offload**，分别对应 TC
 5. RSS
 RSS(**Receive Side Scaling**)，是一项网卡的新特性，俗称多队列。具备多个RSS队列的网卡，可以将不同的网络流分成不同的队列，再分别将这些队列分配到多个CPU核心上进行处理，从而将负荷分散，充分利用多核处理器的能力。
 - 全部信息显示
+
 ```
 [root@globus03 ~]# ethtool -k p5p2
 Features for p5p2:
