@@ -3,7 +3,7 @@ title: C陷阱与缺陷--笔记
 layout: post
 author: WenfengShi
 category: 技术
-tags: [C]
+tags: [C, 读书笔记]
 ---
 原文链接:[http://codeshold.me/2017/01/c_trapsandpitfalls.html](http://codeshold.me/2017/01/c_trapsandpitfalls.html)
 
@@ -221,7 +221,7 @@ else{
 - 新增格式码：%p 打印出该指针所指向的地址； %n 指出已经打印的字符数，这个数被存储在对应参数所指向的整数中（一个整型指针），如下`int n; printf("hello\n%n", &n)`
 
 2. varargs, stdarg
-- varargs.h 中的 `va_alist, va_dcl, va_list, va_start, va_arg, va_end` va_arg-->format
+- varargs.h 中的 `va_alist, va_dcl, va_list, va_start, va_arg, va_end`
 - stdarg.h 处理可变参数列表
 - `void error(char *, ...);`
 
