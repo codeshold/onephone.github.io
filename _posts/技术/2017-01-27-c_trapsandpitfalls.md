@@ -87,8 +87,9 @@ else{
 
 ## 语义陷阱
 
-> 1. 写出`memcpy(char *dest, const char *source, int k)`函数， 写一个函数` void bufwrite(char *p, int n)`来一次转移一批字符到缓冲区，必要时通过函数flushbuffer()刷新缓存。
-> 2. 程序按一定顺序生成一些整数，并将这些整数按列出输出，程序的输出可能包括若干页的整数，每页包括NCOLS列，每列又包括NROWS个元素，每个元素就是一个待输出的整数，写出输出程序(printnum(), printnl(), printpage()分别是打印对应的内容)
+
+> 写出`memcpy(char *dest, const char *source, int k)`函数， 写一个函数` void bufwrite(char *p, int n)`来一次转移一批字符到缓冲区，必要时通过函数flushbuffer()刷新缓存。
+> 程序按一定顺序生成一些整数，并将这些整数按列出输出，程序的输出可能包括若干页的整数，每页包括NCOLS列，每列又包括NROWS个元素，每个元素就是一个待输出的整数，写出输出程序(printnum(), printnl(), printpage()分别是打印对应的内容)
 > 
 
 1. 数组和指针
