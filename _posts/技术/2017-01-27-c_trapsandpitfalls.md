@@ -3,7 +3,7 @@ title: C陷阱与缺陷--笔记
 layout: post
 author: WenfengShi
 category: 技术
-tags: [C, 读书笔记]
+tags: [c/c++, 读书笔记]
 ---
 原文链接:[http://codeshold.me/2017/01/c_trapsandpitfalls.html](http://codeshold.me/2017/01/c_trapsandpitfalls.html)
 
@@ -40,13 +40,13 @@ tags: [C, 读书笔记]
 
 6. C语言的定义并不允许嵌套注释，但C编译器可以支持
 
-7. `a++`的结果不能作为左值
+7. `a++`的结果不能作为左值(见**补充知识点**)
 
 8. C语言允许初始化列表中出现多余的逗号：能让自动化的程序设计工具方便地处理很大的初始化列表（每行的格式一样）
 
 ## 语法陷阱
 
->  
+> C语言允许初始化列表中多余的逗号，例如 `int days[] = {1, 2, 3, 4,};` 为什么有这种特性？
 
 
 1. 函数声明
@@ -63,7 +63,7 @@ tags: [C, 读书笔记]
 - 关系运算符的优先级并不相同，`!=`和`==`要低于其他的
 - 任何两个逻辑运算符都有不同的优先级， 按位运算符比**顺序运算符**要高
 - 结合性为自右向左的有：单目运算；三目运算；assignments
-- [详细参考](http://baike.baidu.com/link?url=neAScCNzgKjoeqTSAZ_wlzGRyGJkbQzPYo-OWpQFC_Ltd9qWWHtEPfDosHLPZ7Wwp9nMSIk28mOg7NeDxMRgsJCphSJJ99LjBCosSb8NqGjdLFRA63vsan6KtH-7akNt0XnhIXs0cwaTr-M6BOheZq)
+- [详细参考](http://baike.baidu.com/link?url=neAScCNzgKjoeqTSAZ_wlzGRyGJkbQzPYo-OWpQFC_Ltd9qWWHtEPfDosHLPZ7Wwp9nMSIk28mOg7NeDxMRgsJCphSJJ99LjBCosSb8NqGjdLFRA63vsan6KtH-7akNt0XnhIXs0cwaTr-M6BOheZq)，前置和后置`++`, `--`的区别见文末**补充知识点**
 
 3. switch语句中的case和break(C的特色)
 - 在没有break的地方加上注释！
@@ -73,7 +73,7 @@ tags: [C, 读书笔记]
 
 5. "悬挂"else
 - else 始终与同一对括号内最近的未匹配的if结合(所以if后面加`{}`)
-- 一些程序设计语言在if中使用**收尾定界符**来现实地说明，如shell中的`if...fi`
+- 一些程序设计语言在if中使用**收尾定界符**来显示地说明，如shell中的`if...fi`
 
 ``` c
 if (x == 0)
@@ -104,15 +104,15 @@ else{
 - K&R C 中对这一问题的说明是，试图修改字符串常量的行为是为定义的
 
 4. 空指针不能解除引用
-- 编译器保证由0转换而来的指针不等于任何有效的指针，及NULL
-- 当常数0被转化为指针使用时，其绝不能被解除引用(dereference)，及`if (p == (char *) 0)`是合法的，但`if (strcmp(p, (char *)0) == 0)...`非法
-- p是空指针，则`printf(p)`和`printf("%s", p)`的行为均为为定义
+- 编译器保证由0转换而来的指针不等于任何有效的指针，即NULL
+- 当常数0被转化为指针使用时，其绝不能被解除引用(dereference)，即`if (p == (char *) 0)`是合法的，但`if (strcmp(p, (char *)0) == 0)...`非法
+- p是空指针，则`printf(p)`和`printf("%s", p)`的行为均为未定义
 
 5. 不对称边界
 - "off-by-one error" 差一错误
 - 左闭右开, `for (i = 0; i < 10; i++)`, 而不写成`for (i = 0; i <= 9 ; i++)`
 - 入界点（可用序列中的第一个元素为0），出界点（不可用序列中的第一个元素）为10
-- `--n >= 0`至少要与等效的`n-- >0`一样快或更快，第一个结果先将n减1，再将结果与0比较；第二个表达式则先保存n，从n中减1，然后比较保存值与0的大小
+- `--n >= 0`至少要与等效的`n-- >0`一样快或更快，第一个结果先将n减1，再将结果与0比较；第二个表达式则先保存n，从n中减1，然后比较保存值与0的大小()
 - 坚持“不对称原则”
 - **数组中实际不存在的“溢界”元素的地址位于数组所占内存之后，这个地址可以用于赋值和比较，但如果引用该元素，则非法**
 
@@ -144,14 +144,14 @@ else{
 
 4. 检查外部类型
 - `char filename[] = "/etc/passwd";`, `extern char* filename;`，前者中filename的类型为“字符数组”，后者的类型为“字符指针”，这两个对filename的声明使用存储空间的方式不同(图不一样)
-- 应修改为`char filename[] = "/etc/passwd";`, `extern char filename[];` 或者 `char* filename = "/etc/passwd";`(文件一), ` extern char* filename;`(文件二)
+- 应修改为`char filename[] = "/etc/passwd";`, `extern char filename[];` 或者 `char* filename = "/etc/passwd";`(文件一), `extern char* filename;`(文件二)
 
-5. Endian的意思是“数据在内存中的字节排列顺序”， 表示一个字在内存中或传送过程中的字节顺序。
+5. Endian的意思是“数据在内存中的字节排列顺序”， 表示一个字在内存中或传送过程中的字节顺序。(Little endian 将低序字节存储在起始地址, Big endian 则相反)
 
 
 ## 库函数
 
-> 当一个程序异常终止时，程序输出的最后几行常常会丢失，原因？如果解决这个问题？
+> 当一个程序异常终止时，程序输出的最后几行常常会丢失，原因？如何解决这个问题？
 
 1. 缓冲输出与内存分配
 - `setbuf()`
@@ -169,7 +169,7 @@ else{
 ## 预处理器
 
 > “表达式” `(x) ((x)-1)` 能否成为一个合法的C表达式？
-> 使用宏实现max的一个版本，其中max的参数都是整数，要求在宏max的定义中这些整形参数只被求值一次
+> 使用宏实现max的一个版本，其中max的参数都是整数，要求在宏max的定义中这些整型参数只被求值一次
 
 1. 显示常量 manifest constant 
 
@@ -200,7 +200,7 @@ else{
 - 正确的使用: `(unsigned char)c`
 
 4. 移位运算
-- 空位有什么填充？
+- 空位用什么填充？
 
 5. 大小写转化
 - `#define toupper(c) ((c)+'A'-'a')` 和 `#define tolower(c) ((c)+'a'-'A')`
@@ -260,3 +260,33 @@ printf(char *format, ...)
 
 ```
 
+## 补充知识点
+
+### 1. i++ 和 ++i
+
+1. 区别
+  - i++ 返回原来的值；++i 返回加一之后的值
+  - i++ 不能当作左值，而i++可以
+
+2. 左值&右值
+  - 左值是对应内存中有确定存储地址的对象的表达式的值，而右值是所有不是左值的表达式的值。
+  - 一般的可以和赋值联系起来，但左值和右值的根本区别在于**是否允许取地址运算符&**获得对应的内存地址
+
+3. 简单的实现(C++)
+
+``` c++
+// 前缀形式
+int& int::operator++() //返回值是一个引用，就是说函数返回值也可以作为一个左值使用
+{//函数本身无参，意味着是在自身空间内增加1的
+  *this += 1;  // 增加
+  return *this;  // 取回值
+}
+
+//后缀形式:
+const int int::operator++(int) //返回值是一个非左值型的，与前缀形式的差别所在
+{//函数带参，说明有另外的空间开辟
+  int oldValue = *this;  // 取回值
+  ++(*this);  // 增加
+  return oldValue;  // 返回被取回的值
+}
+```
