@@ -1,5 +1,5 @@
 ---
-title: 简历撰写要则摘记
+title: 简历撰写要则
 layout: post
 author: WenfengShi
 category: 私库
