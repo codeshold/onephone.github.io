@@ -3,7 +3,7 @@ title: 简历撰写要则
 layout: post
 author: WenfengShi
 category: 私库
-tags: [笔记总结]
+tags: [读书笔记]
 ---
 博客链接: [http://codeshold.me/2017/02/resume_notes.html](http://codeshold.me/2017/02/resume_notes.html)
 
