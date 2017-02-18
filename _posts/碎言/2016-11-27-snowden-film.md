@@ -1,5 +1,5 @@
 ---
-title: 斯诺登Snowden电影--程序员观感
+title: Snowden--程序员观感
 layout: post
 author: WenfengShi
 category: 碎言
