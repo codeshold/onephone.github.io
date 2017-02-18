@@ -3,7 +3,7 @@ title: 一篇特别长的总结(C专家编程)
 layout: post
 author: WenfengShi
 category: 技术
-tags: [读书笔记 c/c++]
+tags: [读书笔记, c/c++]
 ---
 博客链接: [http://codeshold.me/2017/02/expert_c_programming.html](http://codeshold.me/2017/02/expert_c_programming.html)
 

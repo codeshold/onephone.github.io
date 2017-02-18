@@ -1,9 +1,9 @@
 ---
-title: 
+title: 系统安全课程参考资料
 layout: post
 author: WenfengShi
 category: 科研
-tags: []
+tags: [security]
 ---
 博客链接: [http://codeshold.me/2017/02/system_security_refs.html](http://codeshold.me/2017/02/system_security_refs.html)
 
