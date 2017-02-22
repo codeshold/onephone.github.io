@@ -32,62 +32,62 @@ tags: [web]
 
 - 安装并配置httpd
 
-```bash
-## 1. 安装软件包
-[root@ss ~]# yum install httpd php-y
-## 2. 启动httpd服务
-##    httpd启动后，浏览器输入服务器ip即可浏览默认的apache web页面
-[root@ss ~]# systemctl start httpd
-## 3. 设置httpd和mariadb开机启动
-[root@ss ~]# systemctl enable httpd
-```
+        ```bash
+        ## 1. 安装软件包
+        [root@ss ~]# yum install httpd php-y
+        ## 2. 启动httpd服务
+        ##    httpd启动后，浏览器输入服务器ip即可浏览默认的apache web页面
+        [root@ss ~]# systemctl start httpd
+        ## 3. 设置httpd和mariadb开机启动
+        [root@ss ~]# systemctl enable httpd
+        ```
 
 - 安装并配置mariadb(mysql)
 
-```
-## 1. 安装软件包
-[root@ss ~] yum install mariadb mariadb-server -y
+        ```
+        ## 1. 安装软件包
+        [root@ss ~] yum install mariadb mariadb-server -y
 
-## 2. 启动自动安装&配置
-[root@ss html]# mysql_secure_installation 
-......
+        ## 2. 启动自动安装&配置
+        [root@ss html]# mysql_secure_installation 
+        ......
 
-## 3. 登陆mysql
-##    创建数据库opencartdb
-##    新建用户opencart（密码opencart）并赋予权限
-[root@ss html]# mysql -u root -p
-......
-## 3.1 创建数据库opencartdb
-MariaDB [(none)]> create database opencartdb;
-Query OK, 1 row affected (0.00 sec)
-## 3.2 新建用户opencart（密码opencart）并赋予权限
-MariaDB [(none)]> grant all privileges on opencartdb.* to opencart@localhost identified by 'opencart';
+        ## 3. 登陆mysql
+        ##    创建数据库opencartdb
+        ##    新建用户opencart（密码opencart）并赋予权限
+        [root@ss html]# mysql -u root -p
+        ......
+        ## 3.1 创建数据库opencartdb
+        MariaDB [(none)]> create database opencartdb;
+        Query OK, 1 row affected (0.00 sec)
+        ## 3.2 新建用户opencart（密码opencart）并赋予权限
+        MariaDB [(none)]> grant all privileges on opencartdb.* to opencart@localhost identified by 'opencart';
 
-## 3. 设置mariadb开机启动
-[root@ss ~]# systemctl enable httpd mariadb
-```
+        ## 3. 设置mariadb开机启动
+        [root@ss ~]# systemctl enable httpd mariadb
+        ```
 
 - 安装php及相关扩展包
 可跳过扩展包的安装，根据后面opencart检测的结果再安装也行
 
-```
-## 1. 安装php
-[root@ss ~]# yum install php -y
+        ```bash
+        ## 1. 安装php
+        [root@ss ~]# yum install php -y
 
-## 2. 安装扩展包(可跳过此步骤，后面根据opencart检测的结果再安装)
-[root@ss ~]# yum install php-mysql php-mcrypt php-gd php-cli php-pdo -y
+        ## 2. 安装扩展包(可跳过此步骤，后面根据opencart检测的结果再安装)
+        [root@ss ~]# yum install php-mysql php-mcrypt php-gd php-cli php-pdo -y
 
-## 3. 查询结果如下
-[root@ss opencart]# rpm -qa | grep php
-php-common-5.4.16-42.el7.x86_64
-php-5.4.16-42.el7.x86_64
-php-mysql-5.4.16-42.el7.x86_64
-php-mcrypt-5.4.16-7.el7.x86_64
-php-gd-5.4.16-42.el7.x86_64
-php-cli-5.4.16-42.el7.x86_64
-php-pdo-5.4.16-42.el7.x86_64
+        ## 3. 查询结果如下
+        [root@ss opencart]# rpm -qa | grep php
+        php-common-5.4.16-42.el7.x86_64
+        php-5.4.16-42.el7.x86_64
+        php-mysql-5.4.16-42.el7.x86_64
+        php-mcrypt-5.4.16-7.el7.x86_64
+        php-gd-5.4.16-42.el7.x86_64
+        php-cli-5.4.16-42.el7.x86_64
+        php-pdo-5.4.16-42.el7.x86_64
 
-```
+        ```
 
 - 安装和配置opencart
 安装包可从[官网][2]或[github][3]上下载最新版本
