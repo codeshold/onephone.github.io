@@ -1,6 +1,5 @@
 ## 说明
-本博客主题基于[painterlin][1]，感谢！
 
+[codeshold.me](http://codeshold.me)--SWF's Hacking Dream!
 
-  [1]: http://painterlin.com/
-
+Thanks for painterlin's theme!
