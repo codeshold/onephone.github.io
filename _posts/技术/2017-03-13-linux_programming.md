@@ -137,6 +137,6 @@ tags: [linux]
 
 
   [1]: http://codeshold.me/2017/03/c_programming_specification.html
-  [2]: http://www.cnblogs.com/Anker/p/3265058ld.me/2017/03/c_programming_specification.html
+  [2]: http://www.cnblogs.com/Anker/p/3265058.html
   [3]: http://www.cnblogs.com/Anker/p/5965654.html
 
