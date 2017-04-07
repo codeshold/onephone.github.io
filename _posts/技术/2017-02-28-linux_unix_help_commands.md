@@ -3,7 +3,7 @@ title: Uinx/Linux上的帮助查询命令
 layout: post
 author: WenfengShi
 category: 技术
-tags: [Linux]
+tags: [linux]
 ---
 博客链接: [http://codeshold.me/2017/02/linux_unix_help_commands.html](http://codeshold.me/2017/02/linux_unix_help_commands.html)
 
