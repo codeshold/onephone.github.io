@@ -7,7 +7,8 @@ tags: []
 ---
 博客链接: [http://codeshold.me/2017/04/huawei_codecraft.html](http://codeshold.me/2017/04/huawei_codecraft.html)
 
-1. 软件精英挑战赛，清明节三天，累成狗了，通宵了两天
+1. 软件精英挑战赛，清明节三天，累成狗了，通宵了两天, 很高兴进入了复赛
+
 ![image_1bcuv3cmv1kj4ekl8v81red13339.png-174kB][1]
 ![image_1bcuv4ppo1ht8a941f351op51qtpm.png-106kB][2]
 
