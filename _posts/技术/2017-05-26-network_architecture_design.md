@@ -7,7 +7,7 @@ tags: [network]
 ---
 博客链接: [http://codeshold.me/2017/05/network_architecture_design.html](http://codeshold.me/2017/05/network_architecture_design.html)
 
-> 一本比较薄的书，就200来页，和《图解服务器端网络架构》一起看会很不多！本书也适合新手！
+> 一本比较薄的书，就200来页，和《图解服务器端网络架构》一起看会很不错！
 [图灵书籍链接](http://www.ituring.com.cn/book/1504)
 
 ## 概述
@@ -23,7 +23,7 @@ tags: [network]
 ## 基础设施设计模式
 1. 什么是基础设施
     - 系统 ＝ 应用程序 ＋ 基础设施
-    - 基础设施 ＝ 硬件 ＋ 操作系统 ＋ 中国年间
+    - 基础设施 ＝ 硬件 ＋ 操作系统 ＋ 中间件
     - 基础设施构建的难点
 2. 哪个阶段最重要
     - 需求定义、设计、构建、测试
