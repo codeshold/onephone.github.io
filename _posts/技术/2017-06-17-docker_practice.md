@@ -8,7 +8,7 @@ tags: [docker, network]
 博客链接: [http://codeshold.me/2017/06/docker_practice.html](http://codeshold.me/2017/06/docker_practice.html)
 
 
-> 一本很不错的Docker入门书籍,[github地址](https://github.com/yeasy/docker_practice), 自己仔细看完了前14章, 提了两个pull request, 修改了3个issue！  
+> 一本很不错的Docker入门书籍,[github地址](https://github.com/yeasy/docker_practice), 自己仔细看完了前14章, 提了一个pull request, 修改了3个issue！  
 关键字：docker, Union FS(AUFS), cgroups, namespace  
 
 ### 使用镜像
