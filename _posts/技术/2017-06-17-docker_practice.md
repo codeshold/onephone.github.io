@@ -30,8 +30,8 @@ tags: [docker, network]
     - `docker images -f since=mongo:3.2`, `docker images -f before=mongo:3.2`
     - `docker images --filter label=com.example.version=0.1`
     - `docker images -q`, quiet
-    - `docker images --format "{{.ID}}: {{.Repository}}"`, Go的模版语法
-        - `docker images --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}"`
+    - `docker images --format "\{\{.ID\}\}: \{\{.Repository\}\}"`(实际命令中`\`不需要), Go的模版语法
+        - `docker images --format "table \{\{.ID\}\}\t\{\{.Repository\}\}\t\{\{.Tag\}\}"`(实际命令中`\`不需要)
 
 - `docker commit`
     - 该命令除了学习之外,还有一些特殊的应用场合,比如被入侵后保存现场等
@@ -143,7 +143,7 @@ RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
     - `docker run -d -p 5000:5000  -p 3000:80 training/webapp python app.py` 映射多个端口
 - 容器互联
     - `docker run -d -P --name web training/webapp python app.py`
-    - `docker inspect -f "{{ .Name }}" aed` 查看容器名字
+    - `docker inspect -f "\{\{ .Name \}\}" aed`(实际命令中`\`不需要) 查看容器名字
     - `docker run -d --name db training/postgres` 容器互联
     - `docker run -d -P --name web --link db:db training/webapp python app.py`, `--link`参数实现容器互联
         - `--link name:alias`, 其中 name 是要链接的容器的名称, 是这个连接的别名
@@ -154,7 +154,7 @@ RUN echo '<h1>Hello, Docker!</h1>' > /usr/share/nginx/html/index.html
     - `sysctl -w net.ipv4.ip_forward=1`
     - `iptables -nL`, `iptables -t nat -nL`, `brctl show`, `ip addr show eth0`, `brctl addbr bridge0`
     - `docker run -i -t --rm --net=none base /bin/bash`
-    - `docker inspect -f '{{.State.Pid}}' 1f1f4c1f931a`
+    - `docker inspect -f '\{\{.State.Pid\}\}' 1f1f4c1f931a`(实际命令中`\`不需要)
     - 点到点连接
         - `ip link add A type veth peer name B`
         - `ip link set A netns 2989`
