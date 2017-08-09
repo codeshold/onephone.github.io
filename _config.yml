@@ -128,5 +128,4 @@ include: []
 exclude: ["README.md"]
 
 
-# For jekyll-3.0
 plugins: [jekyll-paginate]
