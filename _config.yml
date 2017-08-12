@@ -128,4 +128,6 @@ include: []
 exclude: ["README.md"]
 
 
-plugins: [jekyll-paginate]
+plugins: 
+    - jekyll-paginate
+    - jekyll-sitemap
