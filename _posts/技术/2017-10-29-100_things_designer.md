@@ -5,11 +5,8 @@ author: WenfengShi
 category: 技术
 tags: [心理学]
 ---
-> 原文链接: [http://codeshold.me/2017/10/100_things_designet.html](http://codeshold.me/2017/10/100_things_designet.html)  
+> 博客链接: [http://codeshold.me/2017/10/100_things_designer.html](http://codeshold.me/2017/10/100_things_designer.html)
 
-
-## 0x01 Pre
-> 作为一名准鹅厂的程序员，一不小心看到了前辈们的翻译作品，瞬间感觉整本书都那么亲切了...要发个邮件感谢一下...哈哈
 
 1. 介绍
     - 英文书名：100 Things Every Designer Needs to Know About People
